@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <title>Pig The Game</title>
+    </head>
+    <body>
+        <header class="name-game"><h2 class="name-game">Игра в кости "Свинья"</h2></header>
+        <div class="wrapper">
+            <div class="dice"></div>
+            <div class="panel left active-panel">
+                <h1 class="player">ИГРОК 1</h1>
+                <h2 class="points total-player-one">0</h2>
+                <div class="box-total-points">
+                    <p class="text">Текущие очки</p>
+                    <p class="text text--big round-point-player1">O</p>
+                </div>
+            </div>
+            <div class="panel right">
+                <h1 class="player">ИГРОК 2</h1>
+                <h2 class="points total-player-two">0</h2>
+                <div class="box-total-points">
+                    <p class="text">Текущие очки</p>
+                    <p class="text text--big round-point-player2">O</p>
+                </div>
+            </div>
+            <botton class="botton new-game hidden">
+                <span class="text-botton">&#128055; Новая игра</span>
+            </botton>
+            <botton class="botton roll-the-dice">
+                <span class="text-botton">&#127922;Бросить кубик</span>
+            </botton>
+            <botton class="botton stop-roll">
+                <span class="text-botton">&#128076;Передать ход</span>
+            </botton>
+            <botton class="botton rules">
+                <span class="text-botton">&#128214;Правила игры</span>
+            </botton>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="modal-window-rules hidden">
+            <button class="close-modal-window">&times;</button>
+            <span class="text-rules">Цель игры — бросая кость, набрать 100 очков. Ход представляет собой серию бросков и заключается в следующем: игрок бросает кость неограниченное число раз и суммирует выпадающие значения. Однако если выпадает единица, вся сумма, набранная за ход, аннулируется и ход переходит к следующему игроку. Игрок может завершить свой ход в любой момент. Все игроки имеют право на одинаковое количество ходов.</span>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
